@@ -6,7 +6,6 @@ import { Heading, Typography } from '../../common/text'
 import { Button } from '../../common'
 import DecoratedText from '../../common/text/utils/DecoratedText'
 import Link from 'next/link'
-
 interface HeroProps {
   data: SanityHomePage['hero']
 }
@@ -49,9 +48,7 @@ const Hero = ({ data }: HeroProps) => {
                   Maintaining a team?
                   <span>
                     <Link href="/teams">
-                      <a>
-                        <DecoratedText content="$orange-to-yellow Click here$orange-to-yellow"/>
-                      </a>
+                      <DecoratedText content="$orange-to-yellow Click here$orange-to-yellow"/>
                     </Link>
                   </span> 
                 </Typography>
