@@ -34,6 +34,14 @@ const footerContext = {
       url: 'https://insights.opensauced.pizza',
       label: 'insights.opensauced.pizza',
     },
+    {
+      url: 'https://docs.opensauced.pizza',
+      label: 'docs.opensauced.pizza',
+    },
+    {
+      url: 'https://news.opensauced.pizza',
+      label: 'news.opensauced.pizza',
+    },
   ],
 }
 
@@ -121,6 +129,7 @@ const Footer: FC<FooterProps> = ({ pressPage }) => {
 }
 
 interface LocalTypographyProps {
+  children: React.ReactNode
   variant?: 'title' | 'item1' | 'item2'
 }
 
